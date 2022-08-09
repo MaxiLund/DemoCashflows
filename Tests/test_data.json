@@ -1,0 +1,1 @@
+[{'class': 'CashflowUploadFile', 'action': 'create', 'tag': 'upload_file', 'filter_parameters': {}, 'parameters': {'upload_file': {'$path': ''}}}]
