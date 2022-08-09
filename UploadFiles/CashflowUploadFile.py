@@ -1,4 +1,5 @@
 from generic_app.models import *
+import pandas as pd
 
 class CashflowUploadFile(UploadModelMixin, Model):
     
@@ -6,5 +7,7 @@ class CashflowUploadFile(UploadModelMixin, Model):
     upload_file = FileField()
     
     def update(self):
-        # TODO specify what you want to do once the model has been saved
-        pass
+        df = pd.read_excel(self.upload_file)
+        for index, row in df.iterrows():
+            cashflow = Cashflow(amount=row['amount'], currency=row['currency'])
+            cashflow.save()

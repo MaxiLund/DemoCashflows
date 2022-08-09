@@ -1,1 +1,1 @@
-[{'class': 'CashflowUploadFile', 'action': 'create', 'tag': 'upload_file', 'filter_parameters': {}, 'parameters': {'upload_file': {'$path': ''}}}]
+[{"class": "CashflowUploadFile", "action": "create", "tag": "upload_file", "filter_parameters": {}, "parameters": {"upload_file": "submodels/DemoCashflows/Tests/cashflow_example.xlsx"}}]
